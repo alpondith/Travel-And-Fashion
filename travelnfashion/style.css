@@ -1,0 +1,154 @@
+/*default mini mobile style*/
+/*==========================*/
+html {
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+body{
+    margin:0;
+}
+
+a:link , a:visited , a:hover , a:active ,a {
+    text-decoration: none;
+    color: black;
+}
+
+.content-body{
+
+}
+.parallax {
+
+    background-size:contain;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.big-font{
+    font-size: 35px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.font-position{
+    text-align: center;
+    padding: 70px 0px ;
+}
+
+
+
+.card {
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.4);
+    transition: 0.3s;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 100%;
+    margin: auto;
+    font: inherit;
+    margin: 15px;
+
+}
+.card-title {
+    padding: 8px 0px;
+    font: inherit;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+.card-body{
+    padding: 5px;
+}
+.card:hover {
+    box-shadow: 16px 8px 16px 8px rgba(0,0,0,0.4);
+}
+
+img {
+     max-width: 100%;
+}
+
+.card-content {
+    padding: 2px 14px;
+    text-align: center;
+}
+
+button{
+    background-color: white;
+    cursor: pointer;
+    padding: 0;
+    font: inherit;
+}
+
+
+/*sm  mobile style*/
+/*==========================*/
+@media (min-width: 576px) {
+    html {
+        font-size: 16px;
+    }
+    .font-position{
+        text-align: center;
+        padding: 180px 0px ;
+    }
+
+}
+
+/*md Tab style*/
+/*==========================*/
+@media (min-width: 768px) {
+    html {
+        /*font-size: 16px;*/
+    }
+
+    .font-position{
+        text-align: center;
+        padding: 200px 0px ;
+    }
+
+    .parallax {
+        background-size:contain;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .parallaxTab{
+        background-size: cover;
+    }
+
+
+
+
+}
+
+/*lg laptop style*/
+/*==========================*/
+@media (min-width: 992px) {
+    html {
+        font-size: 18px;
+    }
+
+    .font-position{
+        text-align: center;
+        padding: 300px 0px ;
+    }
+
+    .parallax {
+
+        background-size:cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+}
+
+/* xl desktop style*/
+/*==========================*/
+@media (min-width: 1200px) {
+    html {
+        /*font-size: 32px;*/
+    }
+}

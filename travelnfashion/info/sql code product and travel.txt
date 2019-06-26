@@ -1,0 +1,25 @@
+CREATE TABLE product
+(
+    id VARCHAR(10) PRIMARY KEY NOT NULL,
+    name VARCHAR(20),
+    type VARCHAR(20),
+    price DECIMAL DEFAULT 00.00,
+    size VARCHAR(20),
+    sold_status INT,
+    stock_status INT,
+    description TEXT,
+    admin_storage TEXT,
+    image VARCHAR(200)
+);
+CREATE UNIQUE INDEX product_id_uindex ON product (id);
+
+
+CREATE TABLE travel
+(
+    id VARCHAR(10) PRIMARY KEY NOT NULL,
+    name VARCHAR(50),
+    region VARCHAR(50),
+    description TEXT,
+    image VARCHAR(100)
+);
+CREATE UNIQUE INDEX travel_id_uindex ON travel (id);

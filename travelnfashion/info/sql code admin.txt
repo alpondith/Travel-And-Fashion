@@ -1,0 +1,20 @@
+
+// table name is = login
+// one sample input = username:sumon password:sumon
+// point to be noted: do not give same user 2nd time.then it will show an error as username is unique.
+// so use different defferent username while giving user input. use below mysql code.thanks
+
+
+
+
+CREATE TABLE login
+(
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    username VARCHAR(100) NOT NULL,
+    password VARCHAR(500) NOT NULL
+);
+CREATE UNIQUE INDEX login_id_uindex ON login (id);
+CREATE UNIQUE INDEX login_username_uindex ON login (username);
+
+INSERT INTO login ( username, password) VALUES ("sumon",SHA("sumon127tnf"));
+

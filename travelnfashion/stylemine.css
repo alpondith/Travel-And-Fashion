@@ -1,0 +1,180 @@
+/*default mobile style*/
+/*========================================================================*/
+/*========================================================================*/
+/*========================================================================*/
+html {
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+body{
+    margin:0px;
+    padding: 0px;
+}
+
+
+
+
+.content-body{
+    margin-top: 30px;
+}
+a:link , a:visited , a:hover , a:active {
+    text-decoration: none;
+    color: black;
+}
+
+.big-font{
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+}
+
+/* card styles*/
+.card {
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.4);
+    transition: 0.5s;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 100%;
+    margin: 15px;
+    padding: 0;
+
+}
+.card-title {
+    padding: 8px 0px;
+    font: inherit;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+.card-body{
+    padding: 10px;
+}
+.card-info{
+    padding: 10px;
+    text-align: left;
+}
+.card:hover {
+    box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.4);
+}
+
+img {
+    max-width: 100%;
+}
+
+
+button{
+    background-color: white;
+    cursor: pointer;
+    padding: 0;
+}
+
+/*this are for button */
+.button {
+    font: inherit;
+    font-weight: 600;
+    background-color: white;
+    border-color: green;
+    color: black;
+    padding: 8px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 3px;
+}
+.button:hover{
+
+    background-color: black;
+    border-color: black;
+    color: white;
+}
+
+
+
+/*this are for admin panel hide and show content*/
+button.accordion {
+    font: inherit;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+
+    transition: .5s;
+    border:1px solid gray;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: rgba(19,19,19,0.15);
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+}
+
+
+
+button {
+    font: inherit;
+}
+
+
+
+
+/*Tab style*/
+/*========================================================================*/
+/*========================================================================*/
+/*========================================================================*/
+@media (min-width: 576px) {
+    html {
+        font-size: 16px;
+    }
+
+    .card-info{
+        padding: 10px;
+        text-align: left;
+        min-height: 200px;
+    }
+
+}
+
+
+/*lg laptop style*/
+/*========================================================================*/
+/*========================================================================*/
+/*========================================================================*/
+@media (min-width: 1008px) {
+    html {
+        font-size: 18px;
+    }
+
+    .card-info{
+        padding: 10px;
+        text-align: left;
+        min-height: 140px;
+    }
+
+}
+
