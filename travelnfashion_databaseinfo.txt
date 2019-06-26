@@ -1,0 +1,13 @@
+Admin Database:
+
+database name: travelnf_admin
+username: travelnf_adminz
+password: t12n34f56
+
+
+
+Other databases:
+
+database name:travelnf_datatnf
+username:travelnf_public
+password: tnf7890tnf
